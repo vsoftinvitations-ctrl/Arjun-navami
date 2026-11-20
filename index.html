@@ -16,11 +16,11 @@
   <meta property="og:description"
     content="With immense joy and happiness, we cordially invite you and your family to grace the auspicious occasion of the wedding of Arjun &amp; Navami on Thursday, 31st December 2026 at Ayodhya Auditorium, Payyanur.">
   <meta property="og:url" content="https://arjun-navami.vercel.app/">
-  <meta property="og:image" content="/og-preview.jpg">
-  <meta property="og:image:secure_url" content="/og-preview.jpg">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:width" content="1080">
-  <meta property="og:image:height" content="1350">
+  <meta property="og:image" content="/image%20copy%202.png">
+  <meta property="og:image:secure_url" content="/image%20copy%202.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="717">
+  <meta property="og:image:height" content="1054">
   <meta property="og:image:alt" content="Arjun &amp; Navami Wedding Invitation">
 
   <!-- Twitter / X Card Preview -->
@@ -28,10 +28,10 @@
   <meta name="twitter:title" content="Arjun &amp; Navami — Wedding Invitation">
   <meta name="twitter:description"
     content="With immense joy and happiness, we cordially invite you and your family to grace the auspicious occasion of the wedding of Arjun &amp; Navami on Thursday, 31st December 2026 at Ayodhya Auditorium, Payyanur.">
-  <meta name="twitter:image" content="/og-preview.jpg">
+  <meta name="twitter:image" content="/image%20copy%202.png">
 
   <!-- General / Fallback Preview -->
-  <link rel="image_src" href="/og-preview.jpg">
+  <link rel="image_src" href="/image%20copy%202.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -544,7 +544,7 @@
     .hero-shadow-bg {
       position: absolute;
       inset: 0;
-      background: url('preview.png') center 30% / cover no-repeat;
+      background: url('image%20copy%202.png') center 30% / cover no-repeat;
       opacity: 0.22;
       filter: saturate(0.9) contrast(1.05);
       -webkit-mask-image: radial-gradient(ellipse at 50% 42%, #000 25%, transparent 75%);
@@ -617,13 +617,8 @@
       height: 100%;
       object-fit: cover;
       object-position: 50% 32%;
-      opacity: 0;
-      transition: opacity 3s ease-in-out;
-      pointer-events: none;
-    }
-
-    .cover img.active {
       opacity: 1;
+      pointer-events: none;
     }
 
     @media (min-width: 768px) {
@@ -638,254 +633,7 @@
       }
 
       .cover img {
-        object-position: 50% 50%;
-      }
-
-      .cover img:first-child,
-      .cover img[src*="preview"] {
-        object-position: 50% 52%;
-      }
-
-      .cover img:nth-child(2),
-      .cover img[src*="image-copy"],
-      .cover img[src*="image%20copy"] {
-        object-position: 50% 46%;
-      }
-    }
-
-    @media(prefers-reduced-motion:reduce) {
-      .cover img {
-        transition: none;
-        transform: none;
-      }
-    }
-
-    /* gallery */
-    .gal {
-      position: relative;
-      max-width: 500px;
-      margin: 0 auto;
-      padding-bottom: 26%;
-      text-align: left
-    }
-
-    .ph {
-      overflow: hidden;
-      border-radius: 6px;
-      box-shadow: 0 8px 28px rgba(60, 50, 30, .12);
-      background: var(--cream);
-      cursor: pointer;
-      position: relative;
-    }
-
-    .ph img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transform: scale(1.03);
-      transition: transform 2.6s ease;
-    }
-
-    .in.ph img,
-    .in .ph img {
-      transform: none;
-    }
-
-    .ph:hover img {
-      transform: scale(1.04);
-      transition: transform .4s ease;
-    }
-
-    .ga {
-      width: 80%;
-      aspect-ratio: 4/5;
-    }
-
-    .ga img {
-      object-position: 50% 28%;
-    }
-
-    .gb {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 54%;
-      aspect-ratio: 3/4;
-      border: 6px solid var(--ivory);
-    }
-
-    .gb img {
-      object-position: 50% 36%;
-    }
-
-    /* Lightbox Modal */
-    dialog.lightbox {
-      display: none;
-    }
-
-    dialog.lightbox[open] {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: fixed;
-      inset: 0;
-      width: 100vw;
-      height: 100vh;
-      max-width: 100vw;
-      max-height: 100vh;
-      margin: 0;
-      padding: 0;
-      border: none;
-      background: rgba(14, 12, 10, 0.94);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      z-index: 10000;
-      animation: lbFadeIn .25s ease-out;
-      user-select: none;
-      -webkit-user-select: none;
-    }
-
-    dialog.lightbox::backdrop {
-      background: rgba(14, 12, 10, 0.94);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-    }
-
-    @keyframes lbFadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-    .lightbox-dialog-body {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      max-width: 94vw;
-      max-height: 94vh;
-      padding: 16px;
-      animation: lbScaleUp .28s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    @keyframes lbScaleUp {
-      from {
-        transform: scale(0.92);
-        opacity: 0;
-      }
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-
-    .lightbox-img-wrap {
-      position: relative;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 24px 60px rgba(0, 0, 0, .7), 0 0 0 1px rgba(220, 201, 160, .35);
-      background: #15120e;
-      max-width: 92vw;
-      max-height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .lightbox-img-wrap img {
-      display: block;
-      max-width: min(92vw, 1000px);
-      max-height: min(80vh, 880px);
-      width: auto;
-      height: auto;
-      object-fit: contain;
-      margin: 0 auto;
-      transition: opacity .2s ease;
-    }
-
-    .lightbox-caption {
-      margin: 14px 0 0;
-      font-family: var(--serif);
-      font-size: 1.15rem;
-      letter-spacing: .15em;
-      color: var(--gold-soft);
-      text-align: center;
-      text-transform: uppercase;
-    }
-
-    .lightbox-close {
-      position: fixed;
-      top: max(16px, env(safe-area-inset-top, 16px));
-      right: max(16px, env(safe-area-inset-right, 16px));
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: rgba(30, 26, 22, .75);
-      border: 1px solid rgba(220, 201, 160, .45);
-      color: #faf6ee;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all .2s ease;
-      z-index: 10002;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, .4);
-    }
-
-    .lightbox-close:hover,
-    .lightbox-close:focus-visible {
-      background: var(--gold);
-      color: #fff;
-      transform: scale(1.08);
-      border-color: #fff;
-    }
-
-    .lightbox-nav {
-      position: fixed;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: rgba(30, 26, 22, .7);
-      border: 1px solid rgba(220, 201, 160, .45);
-      color: #faf6ee;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all .2s ease;
-      z-index: 10002;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, .4);
-    }
-
-    .lightbox-prev {
-      left: max(16px, env(safe-area-inset-left, 16px));
-    }
-
-    .lightbox-next {
-      right: max(16px, env(safe-area-inset-right, 16px));
-    }
-
-    .lightbox-nav:hover,
-    .lightbox-nav:focus-visible {
-      background: var(--gold);
-      color: #fff;
-      transform: translateY(-50%) scale(1.08);
-      border-color: #fff;
-    }
-
-
-
-    @media(prefers-reduced-motion:reduce) {
-      .ph img {
-        transition: none;
-        transform: none;
+        object-position: 50% 45%;
       }
     }
 
@@ -1137,31 +885,6 @@
     <source src="music/song.mp3" type="audio/mpeg">
   </audio>
   <main id="app"></main>
-  <!-- Lightbox Modal -->
-  <dialog id="lightbox" class="lightbox" aria-label="Photo view">
-    <button class="lightbox-close" type="button" aria-label="Close photo view">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="18" y1="6" x2="6" y2="18"></line>
-        <line x1="6" y1="6" x2="18" y2="18"></line>
-      </svg>
-    </button>
-    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous photo">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="15 18 9 12 15 6"></polyline>
-      </svg>
-    </button>
-    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next photo">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="9 18 15 12 9 6"></polyline>
-      </svg>
-    </button>
-    <div class="lightbox-dialog-body">
-      <div class="lightbox-img-wrap">
-        <img id="lightbox-img" src="" alt="Wedding photo">
-      </div>
-      <p class="lightbox-caption" id="lightbox-caption">Arjun &amp; Navami</p>
-    </div>
-  </dialog>
   <footer class="foot">
     <div class="serif" id="fmono"></div>
     <div class="small" style="margin-top:8px" id="fdate"></div>
@@ -1213,7 +936,7 @@
       compliments: ["Athira & Arunlal", "Ishani & Anshika"],
       complimentsNote: "Your presence and blessings are our only presents."
     };
-    const PHOTOS = { a: "preview.png", b: "image.png", c: "image-copy.png" };
+    const MAIN_PHOTO = "image copy 2.png";
     /* ===== Render ===== */
     const orn = '<svg class="orn r" viewBox="0 0 150 18" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M0 9h55M95 9h55"/><circle cx="75" cy="9" r="4"/><circle cx="65" cy="9" r="2.5"/><circle cx="85" cy="9" r="2.5"/></svg>';
     const pin = '<svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg>';
@@ -1232,8 +955,7 @@
 
 <section id="intro">
   <div class="cover r">
-    <img class="cover-slide active" src="${PHOTOS.a}" alt="Arjun and Navami" decoding="async">
-    <img class="cover-slide" src="${PHOTOS.c}" alt="Arjun and Navami" decoding="async">
+    <img src="${MAIN_PHOTO}" alt="Arjun and Navami" decoding="async">
   </div>
   <div class="wrap">
     <p class="label r">Together with their families</p>
@@ -1365,13 +1087,6 @@
   <div class="rule line-x r"></div>
 </div></section>
 
-<section><div class="wrap" style="max-width:560px">
-  <div class="gal">
-    <div class="ph ga r" role="button" tabindex="0" aria-label="View photo of Arjun and Navami"><img src="${PHOTOS.b}" alt="Arjun and Navami" loading="lazy" decoding="async"></div>
-    <div class="ph gb r" role="button" tabindex="0" aria-label="View photo of Arjun and Navami"><img src="${PHOTOS.a}" alt="Arjun and Navami" loading="lazy" decoding="async"></div>
-  </div>
-</div></section>
-
 <section style="padding-block:clamp(100px,22vw,200px)"><div class="wrap">
   <h2 class="names r" style="font-size:clamp(2.2rem,9vw,3.4rem)">${W.short}</h2>
   <p class="serif r" style="font-size:1.4rem;letter-spacing:.2em;margin-top:24px">${D.dots}</p>
@@ -1438,17 +1153,6 @@
       }
     }
 
-    /* ===== Cover crossfade slideshow (3s smooth transition) ===== */
-    const coverImgs = document.querySelectorAll('.cover img');
-    let currentCoverSlide = 0;
-    if (coverImgs.length > 1) {
-      setInterval(() => {
-        coverImgs[currentCoverSlide].classList.remove('active');
-        currentCoverSlide = (currentCoverSlide + 1) % coverImgs.length;
-        coverImgs[currentCoverSlide].classList.add('active');
-      }, 6000);
-    }
-
     /* ===== Wedding Countdown Timer ===== */
     const targetDate = new Date('2026-12-31T11:30:00+05:30').getTime();
 
@@ -1482,110 +1186,6 @@
 
     updateCountdown();
     setInterval(updateCountdown, 1000);
-
-    /* ===== Lightbox photo viewer ===== */
-    const lb = document.getElementById('lightbox');
-    const lbImg = document.getElementById('lightbox-img');
-    const lbCap = document.getElementById('lightbox-caption');
-    const lbPrev = document.querySelector('.lightbox-prev');
-    const lbNext = document.querySelector('.lightbox-next');
-    const galleryItems = [
-      { src: PHOTOS.b, caption: "Arjun & Navami" },
-      { src: PHOTOS.a, caption: "Arjun & Navami" },
-      { src: PHOTOS.c, caption: "Arjun & Navami" }
-    ];
-    let currentPhotoIdx = 0;
-
-    function showPhotoAt(idx) {
-      if (idx < 0) idx = galleryItems.length - 1;
-      if (idx >= galleryItems.length) idx = 0;
-      currentPhotoIdx = idx;
-      if (lbImg) {
-        lbImg.style.opacity = '0';
-        setTimeout(() => {
-          lbImg.src = galleryItems[currentPhotoIdx].src;
-          lbImg.alt = galleryItems[currentPhotoIdx].caption;
-          lbImg.style.opacity = '1';
-        }, 120);
-      }
-      if (lbCap) {
-        lbCap.textContent = galleryItems[currentPhotoIdx].caption;
-      }
-    }
-
-    function openLightbox(src, alt) {
-      if (!lb || !lbImg) return;
-      const cleanSrc = decodeURIComponent((src || '').split('/').pop());
-      const foundIdx = galleryItems.findIndex(item => {
-        const itemClean = decodeURIComponent((item.src || '').split('/').pop());
-        return cleanSrc && itemClean && (cleanSrc === itemClean || cleanSrc.includes(itemClean) || itemClean.includes(cleanSrc));
-      });
-      currentPhotoIdx = foundIdx >= 0 ? foundIdx : 0;
-      lbImg.src = galleryItems[currentPhotoIdx] ? galleryItems[currentPhotoIdx].src : src;
-      lbImg.alt = alt || "Arjun & Navami";
-      if (lbCap) lbCap.textContent = alt || "Arjun & Navami";
-      lbImg.style.opacity = '1';
-
-      if (typeof lb.showModal === 'function') {
-        lb.showModal();
-      } else {
-        lb.setAttribute('open', '');
-      }
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeLightbox() {
-      if (!lb) return;
-      if (typeof lb.close === 'function') {
-        lb.close();
-      } else {
-        lb.removeAttribute('open');
-      }
-      document.body.style.overflow = '';
-    }
-
-    document.getElementById('app').addEventListener('click', e => {
-      const target = e.target.closest('.ph');
-      if (target) {
-        const img = target.querySelector('img');
-        if (img) openLightbox(img.getAttribute('src') || img.src, img.alt);
-      }
-    });
-
-    document.getElementById('app').addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        const target = e.target.closest('.ph');
-        if (target && target === document.activeElement) {
-          e.preventDefault();
-          const img = target.querySelector('img');
-          if (img) openLightbox(img.getAttribute('src') || img.src, img.alt);
-        }
-      }
-    });
-
-    document.querySelector('.lightbox-close')?.addEventListener('click', closeLightbox);
-    lbPrev?.addEventListener('click', e => { e.stopPropagation(); showPhotoAt(currentPhotoIdx - 1); });
-    lbNext?.addEventListener('click', e => { e.stopPropagation(); showPhotoAt(currentPhotoIdx + 1); });
-
-    lb?.addEventListener('click', e => {
-      if (!e.target.closest('.lightbox-img-wrap') && !e.target.closest('.lightbox-nav')) {
-        closeLightbox();
-      }
-    });
-
-    window.addEventListener('keydown', e => {
-      if (!lb || !lb.hasAttribute('open')) return;
-      if (e.key === 'Escape') {
-        e.preventDefault();
-        closeLightbox();
-      } else if (e.key === 'ArrowLeft') {
-        e.preventDefault();
-        showPhotoAt(currentPhotoIdx - 1);
-      } else if (e.key === 'ArrowRight') {
-        e.preventDefault();
-        showPhotoAt(currentPhotoIdx + 1);
-      }
-    });
   </script>
 </body>
 
